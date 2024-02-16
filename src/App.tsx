@@ -17,7 +17,7 @@ function App() {
           <div className="menuContainer">
             <Menu />
           </div>
-          <div className="contentContainner">
+          <div className="contentContainer">
             <Outlet />
           </div>
         </div>
