@@ -1,7 +1,5 @@
 import { Link } from "react-router-dom";
 import "./menu.scss";
-// import { MdHome } from "react-icons/md";
-// import { MdPerson } from "react-icons/md";
 import { menu } from "../../data";
 
 const Menu = () => {

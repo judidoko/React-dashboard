@@ -16,7 +16,7 @@ const Navbar = () => {
         <FaExpand className="icon" />
         <div className="notification">
           <IoMdNotifications className="icon" />
-          <span>1</span>
+          <span>3</span>
         </div>
         <div className="user">
           <img

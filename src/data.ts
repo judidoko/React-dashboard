@@ -281,7 +281,7 @@ export const chartBoxConversion = {
 
 export const barChartBoxRevenue = {
   title: "Profit Earned",
-  color: "#8884d8",
+  color: "#4A8BDF",
   dataKey: "profit",
   chartData: [
     {
@@ -317,7 +317,7 @@ export const barChartBoxRevenue = {
 
 export const barChartBoxVisit = {
   title: "Total Visit",
-  color: "#FF8042",
+  color: "#A0006D",
   dataKey: "visit",
   chartData: [
     {
@@ -350,6 +350,13 @@ export const barChartBoxVisit = {
     },
   ],
 };
+
+export const pieData = [
+  { name: "Tshit", value: 500, color: "#009B4D" },
+  { name: "Sleeve shirt", value: 300, color: "#FFCC00" },
+  { name: "Trousers pants", value: 400, color: "#73605B" },
+  { name: "Jeans", value: 600, color: "#408EC6" },
+];
 
 export const userRows = [
   {
