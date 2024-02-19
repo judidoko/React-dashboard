@@ -36,7 +36,7 @@ const AreaChartBox = () => {
             />
             <Area
               type="monotone"
-              dataKey="colthes"
+              dataKey="clothes"
               stackId="1"
               stroke="#82ca9d"
               fill="#82ca9d"
