@@ -17,7 +17,7 @@ const usersData = (props: Props) => {
   const actionColumn: GridColDef = {
     field: "action",
     headerName: "Action",
-    width: 200,
+    width: 100,
     renderCell: (params) => {
       return (
         <div className="action">
