@@ -7,11 +7,11 @@ import { products } from "../../data";
 
 // Columns
 const columns: GridColDef[] = [
-  { field: "id", headerName: "ID", width: 90 },
+  { field: "id", headerName: "ID", width: 50 },
   {
     field: "img",
     headerName: "Image",
-    width: 150,
+    width: 100,
     renderCell: (params) => {
       return <img src={params.row.img || "/noavatar.png"} alt="img" />;
     },
@@ -19,26 +19,26 @@ const columns: GridColDef[] = [
   {
     field: "title",
     headerName: "Title",
-    width: 250,
+    width: 200,
     type: "string",
   },
   {
     field: "color",
     headerName: "Color",
-    width: 150,
+    width: 100,
     type: "string",
   },
   {
     field: "price",
     headerName: "Price",
     type: "string",
-    width: 200,
+    width: 100,
   },
   {
     field: "producer",
     type: "string",
     headerName: "Producer",
-    width: 200,
+    width: 100,
   },
   {
     field: "createdAt",

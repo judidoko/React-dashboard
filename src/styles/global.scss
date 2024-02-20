@@ -15,11 +15,12 @@ a {
   font-family: monospace;
   background-color: $main-bg;
   color: $main-color;
-  width: max-content;
+  width: 100%;
 }
 
 .container {
   display: flex;
+  width: 100%;
 }
 
 .menuContainer {
@@ -36,7 +37,7 @@ a {
 // Scroll
 /* width */
 ::-webkit-scrollbar {
-  width: 7px;
+  width: 10px;
 }
 
 /* Track */
