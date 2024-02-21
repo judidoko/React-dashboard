@@ -10,7 +10,6 @@ import Product from "./pages/product/Product";
 import User from "./pages/user/User";
 
 function App() {
-  // Page Layout
   const Layout = () => {
     return (
       <div className="main">
