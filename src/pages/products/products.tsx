@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./products.scss";
-import UsersData from "../../components/UsersData/usersData";
+import UsersData from "../../components/UsersData/UsersData";
 import Add from "../../components/add/Add";
 import { GridColDef } from "@mui/x-data-grid";
 import { products } from "../../data";

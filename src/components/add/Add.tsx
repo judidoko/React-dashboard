@@ -1,5 +1,6 @@
 import { GridColDef } from "@mui/x-data-grid";
 import "./add.scss";
+import { useMutation, useQueryClient } from "@tanstack/react-query";
 
 interface Props {
   slug: string;
@@ -7,14 +8,29 @@ interface Props {
   setOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-// Add user/product function
-const HandleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-  e.preventDefault();
-
-  // add new item
-  //   axios.post(`.api.${slug}s`, {})
-};
 const AddUser = (props: Props) => {
+  const queryClient = useQueryClient();
+
+  const mutation = useMutation({
+    mutationFn: () => {
+      return fetch(`http://localhost:8080/api/${props.slug}s`, {
+        method: "post",
+      });
+    },
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: [`all${props.slug}s`] });
+    },
+  });
+
+  // Add user/product function
+  const HandleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    // add new item
+    //   axios.post(`.api.${slug}s`, {})
+  };
+  // Hooks
+
   return (
     <div className="addUser">
       <div className="modal">

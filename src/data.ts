@@ -119,7 +119,7 @@ export const topDealUsers = [
   {
     id: 1,
     img: "https://images.pexels.com/photos/8405873/pexels-photo-8405873.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    username: "Elva McDonald",
+    username: "Elva Peter",
     email: "elva@gmail.com",
     amount: "500000",
   },
@@ -417,7 +417,7 @@ export const userRows = [
   {
     id: 2,
     img: "https://images.pexels.com/photos/1181519/pexels-photo-1181519.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    lastName: "Manning",
+    lastName: "Comfort",
     firstName: "Stella",
     email: "comhuhmit@gmail.com",
     phone: "123 456 789",
