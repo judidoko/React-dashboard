@@ -1,4 +1,5 @@
 @import "./variables.scss";
+@import "./responsive.scss";
 
 * {
   margin: 0;
@@ -27,6 +28,10 @@ a {
   width: 200px;
   padding: 5px 20px;
   border-right: 2px solid $soft-bg;
+
+  @include lg {
+    width: max-content;
+  }
 }
 
 .contentContainer {

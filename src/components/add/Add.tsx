@@ -27,9 +27,9 @@ const AddUser = (props: Props) => {
     e.preventDefault();
 
     // add new item
-    //   axios.post(`.api.${slug}s`, {})
+    mutation.mutate();
+    props.setOpen(false);
   };
-  // Hooks
 
   return (
     <div className="addUser">
