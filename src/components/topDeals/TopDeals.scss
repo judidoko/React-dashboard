@@ -1,3 +1,5 @@
+@import "../../styles/responsive.scss";
+
 .topDeals {
   height: 550px;
   overflow-y: scroll;
@@ -19,6 +21,13 @@
           height: 40px;
           border-radius: 50%;
           object-fit: cover;
+
+          @include xxl {
+            display: none;
+          }
+          @include lg {
+            display: block;
+          }
         }
         .userInfo {
           display: flex;
